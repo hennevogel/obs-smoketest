@@ -22,8 +22,8 @@ if hostname.empty?
   hostname = ipaddress
 end
 
-# Capybara.app_host = "https://" + hostname
-Capybara.app_host = "http://localhost:3000"
+Capybara.app_host = "https://" + hostname
+# Capybara.app_host = "http://localhost:3000"
 
 RSpec.configure do |config|
   config.include Capybara::DSL
